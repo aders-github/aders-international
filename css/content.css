@@ -27,8 +27,9 @@
     grid-template-columns: repeat(2, 1fr); /* 2개의 열로 구성 */
     gap: 20px;
     padding: 20px;
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     margin: 0 auto;
+
 }
 
 .text-content, .image-content {
@@ -49,17 +50,23 @@
     margin: auto;
 }
 
+.text-content .color-title {
+    font-weight: bold;
+    color: #f9e902;
+}
 .image-content {
     animation-name: slideInRight;
 }
 
 .image-content img {
     width: 100%;
-    max-width: 800px;
     border-radius: 10px;
 }
 
 /* 반응형 디자인 */
+@media (min-width: 1440px) {
+
+}
 @media (max-width: 700px) {
     .content {
         grid-template-columns: 1fr; /* 작은 화면에서는 하나의 열로 */
@@ -70,7 +77,44 @@
         animation-duration: 0.8s;
     }
 }
-
+@media (min-width: 1401px) {
+    .content {
+        font-size: 30px;
+        margin: 15px auto;
+    }
+}
+@media (max-width: 1400px) {
+    .content {
+        font-size: 25px;
+        margin: 10px auto;
+    }
+}
+@media (max-width: 1023px) {
+    .content {
+        font-size: 20px;
+        margin: 7px auto;
+    }
+}
+@media (max-width: 800px) {
+    .title-pont {
+        font-size: 30px;
+        margin: 10px auto;
+    }
+    .normal-pont {
+        font-size: 20px;
+        margin: 15px auto;
+    }
+}
+@media (max-width: 500px) {
+    .title-pont {
+        font-size: 25px;
+        margin: 10px auto;
+    }
+    .normal-pont {
+        font-size: 20px;
+        margin: 15px auto;
+    }
+}
 /* 애니메이션이 끝난 후에도 상태 유지 */
 @keyframes slideInUp {
     from {

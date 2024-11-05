@@ -10,8 +10,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0;
     padding: 10px 20px;
 }
 .logo {
@@ -76,8 +76,18 @@
     margin: 0;
 
 }
-@media (min-width: 501px) {
-
+@media (min-width: 2000px) {
+    .nav-link a{
+        font-size: 30px;
+    }
+    .nav-link ul {
+        gap: 50px;
+    }
+}
+@media (max-width: 1450px) {
+    .nav-link a{
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 500px) {
