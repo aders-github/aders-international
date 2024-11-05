@@ -18,13 +18,18 @@
 
 .info-div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     gap: 5px;
     background: #34495e; /* 약간 더 밝은 배경으로 대비 */
-    padding: 15px;
     border-radius: 10px; /* 둥근 모서리 */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 입체감 추가 */
+}
+.info-div > div {
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    border-right: rgba(255, 255, 255, 0.23) 1px solid;
 }
 
 .info-div p:first-child {

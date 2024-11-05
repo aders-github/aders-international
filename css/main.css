@@ -1,10 +1,11 @@
 /* 기본 설정 */
-body {
+body,html {
     font-family: "Noto Sans JP";
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    width: 100vw;
 }
 /* 전체 스크롤바의 너비와 높이 설정 */
 ::-webkit-scrollbar {
