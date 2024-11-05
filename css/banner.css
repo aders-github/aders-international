@@ -2,7 +2,7 @@
 .main-banner {
     position: relative;
     width: 100%;
-    height: 800px;
+    height: 100vh;
     background: #ddd;
     margin: 0 0 30px 0;
 }
@@ -17,16 +17,24 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
     text-align: center;
     color: #fff;
     padding: 20px;
+}
+#main-heading {
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.74);
+}
+#main-heading b {
+    color: rgb(255, 255, 255);
+
 }
 /*sub-banner*/
 .sub-banner{
     position: relative;
     width: 100%;
-    height: 800px;
+    height: 100vh;
     background: #ddd;
     margin: 30px 0 0;
 }
@@ -37,13 +45,42 @@
     object-fit: cover;
 }
 
-.sub-banner-text {
+#sub-banner-text {
+    background-color: rgba(255, 255, 255, 0.2);
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    top: 30%;
+    left: 10%;
+    text-align: left;
     color: #fff;
+    max-width: 80%;
     /*background: rgba(0, 0, 0, 0.5);*/
     padding: 20px;
+}
+#sub-banner-text h2 {
+    font-size: 2.5rem;
+}
+#sub-banner-text p {
+    font-size: 1.5rem;
+}
+#contact-banner-text {
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    font-size: 1.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: #fff;
+    max-width: 80%;
+    /*background: rgba(0, 0, 0, 0.5);*/
+    padding: 20px;
+}
+#contact-heading {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: white solid 2px;
+    border-radius: 5px;
+    font-size: 2rem;
+    padding: 5%;
+    margin: auto;
+    width: 50%;
 }
