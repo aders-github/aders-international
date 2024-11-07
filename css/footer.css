@@ -34,7 +34,6 @@
 
 .info-div p:first-child {
     font-weight: bold;
-    font-size: 18px;
     color: #f39c12; /* 제목 강조 색상 */
     margin-bottom: 10px;
 }
@@ -42,7 +41,6 @@
 /* 푸터 하단 텍스트 스타일 */
 .footer p {
     margin: 0;
-    font-size: 14px;
     color: #bdc3c7; /* 약간 연한 색상 */
 }
 

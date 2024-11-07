@@ -39,3 +39,65 @@ body,html {
     text-align: center;
     padding: 40px 20px;
 }
+.font-xl {
+    font-size: calc(3.5vw); /* 화면 크기에 따라 유동적으로 조정 */
+    margin: 15px auto;
+    white-space: nowrap; /* 줄바꿈 방지 */
+    overflow: hidden; /* 넘치는 텍스트가 화면 밖으로 나가도록 */
+}
+.font-l {
+    font-size: calc(3vw);
+    margin: 5px;
+    white-space: nowrap; /* 줄바꿈 방지 */
+    overflow: hidden; /* 넘치는 텍스트가 화면 밖으로 나가도록 */
+}
+.font-m {
+    font-size: calc(2.3vw);
+    margin: 5px;
+    white-space: nowrap; /* 줄바꿈 방지 */
+    overflow: hidden; /* 넘치는 텍스트가 화면 밖으로 나가도록 */
+}
+.font-s {
+    font-size: calc(1.7vw);
+    margin: 5px;
+    white-space: nowrap; /* 줄바꿈 방지 */
+    overflow: hidden; /* 넘치는 텍스트가 화면 밖으로 나가도록 */
+}
+.font-xs {
+    font-size: calc(1.3vw);
+    margin: 5px;
+    white-space: nowrap; /* 줄바꿈 방지 */
+    overflow: hidden; /* 넘치는 텍스트가 화면 밖으로 나가도록 */
+}
+@media (max-width: 450px) {
+    .font-xl {
+        font-size: 35px;
+        margin: 10px auto;
+        white-space: nowrap; /* 줄바꿈 방지 */
+        overflow: hidden; /* 넘치는 텍스트가 화면 밖으로 나가도록 */
+    }
+    .font-l {
+        font-size: 20px;
+        margin: 3px;
+        white-space: nowrap; /* 줄바꿈 방지 */
+        overflow: hidden; /* 넘치는 텍스트가 화면 밖으로 나가도록 */
+    }
+    .font-m {
+        font-size: 12px;
+        margin: 3px;
+        white-space: nowrap; /* 줄바꿈 방지 */
+        overflow: hidden; /* 넘치는 텍스트가 화면 밖으로 나가도록 */
+    }
+    .font-s {
+        font-size: 8px;
+        margin: 2px;
+        white-space: nowrap; /* 줄바꿈 방지 */
+        overflow: hidden; /* 넘치는 텍스트가 화면 밖으로 나가도록 */
+    }
+    .font-xs {
+        font-size: 12px;
+        margin: 5px;
+        white-space: nowrap; /* 줄바꿈 방지 */
+        overflow: hidden; /* 넘치는 텍스트가 화면 밖으로 나가도록 */
+    }
+}
