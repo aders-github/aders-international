@@ -20,30 +20,30 @@
 <!-- Header -->
 <header class="header">
     <div class="header-container">
-        <h1 class="logo">ADERS</h1>
+        <img class="logo" src="./asset/logo.png" alt="logo">
         <nav class="nav-link">
             <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">회사소개</a></li>
-                <li><a href="#goal">사업목표</a></li>
-                <li><a href="#info">사업내용</a></li>
-                <li><a href="#contact">문의하기</a></li>
-                <li><a href="html/kr.html" class="button" title="한국어 페이지로 이동">한국어</a></li>
+                <li><a href="#home" class="font-s">HOME</a></li>
+                <li><a href="#about" class="font-s">회사소개</a></li>
+                <li><a href="#goal" class="font-s">사업목표</a></li>
+                <li><a href="#info" class="font-s">사업내용</a></li>
+                <li><a href="#contact" class="font-s">문의하기</a></li>
+                <li><a href="html/kr.html" class="button font-s" title="한국어 페이지로 이동">한국어</a></li>
             </ul>
         </nav>
         <nav class="hamburger" onclick="toggleDropdown()">☰</nav>
         <div class="dropdown-menu">
-            <a href="#home">HOME</a>
+            <a href="#home" class="font-m">HOME</a>
             <hr class="line">
-            <a href="#contact">문의하기</a>
+            <a href="#contact" class="font-m">문의하기</a>
             <hr class="line">
-            <a href="#about">회사소개</a>
+            <a href="#about" class="font-m">회사소개</a>
             <hr class="line">
-            <a href="#goal">사업목표</a>
+            <a href="#goal" class="font-m">사업목표</a>
             <hr class="line">
-            <a href="#info">사업내용</a>
+            <a href="#info" class="font-m">사업내용</a>
             <hr class="line">
-            <a href="html/kr.html" class="button" title="한국어 페이지로 이동">한국어</a>
+            <a href="html/kr.html" class="button font-m" title="한국어 페이지로 이동">한국어</a>
         </div>
 
     </div>
@@ -51,59 +51,63 @@
 
 <!-- Main Banner -->
 <section class="main-banner" id="home" aria-labelledby="main-heading">
-    <img src="https://heverdemo.files.wordpress.com/2019/08/autumn-mood-forest-cold-dawn-397096-1.jpg"
-         alt="" class="banner-image">
+    <img src="./asset/banner-main.jpg"
+         alt="" class="main-banner">
     <div class="banner-text">
-        <h2 id="main-heading" class="title-pont">일상을 <b>행복</b>하게 하는<br>최고의 <b>선택</b>과 공간</h2>
+        <h2 class="font-xl">일상을 <b>행복</b>하게 하는<br>최고의 <b>선택</b>과 공간</h2>
     </div>
 </section>
 
 <!-- Gallery Section -->
 <section class="gallery-section" id="about" aria-labelledby="about-heading">
-    <h2 class="gallery-item-large" >회사소개</h2>
+    <h2 class="gallery-item-large font-l" >회사 소개</h2>
     <div class="gallery">
         <div class="gallery-item">
             <div class="gallery-img">
-                <img src="./asset/pin.png" alt="img">
+                <img src="./asset/icon1.png" alt="img">
             </div>
+            <p class="font-m">창립일</p>
+            <h3 class="font-l">1999</h3>
             <hr style="border: 1px solid skyblue; width: 10%">
-            <h3>창립일</h3>
-            <p>1999년 01월~</p>
+            <p class="font-s">Year</p>
         </div>
         <div class="gallery-item">
             <div class="gallery-img">
-                <img src="./asset/pin.png" alt="img">
+                <img src="./asset/icon2.png" alt="img">
             </div>
+            <p class="font-m">자본금</p>
+            <h3 class="font-l">500万円</h3>
             <hr style="border: 1px solid skyblue; width: 10%">
-            <h3>자본금</h3>
-            <p>100억원</p>
+            <p class="font-s">￥</p>
         </div>
         <div class="gallery-item">
             <div class="gallery-img">
-                <img src="./asset/pin.png" alt="img">
+                <img src="./asset/icon3.png" alt="img">
             </div>
+            <p class="font-m">직원수</p>
+            <h3 class="font-l">11+</h3>
             <hr style="border: 1px solid skyblue; width: 10%">
-            <h3>직원수</h3>
-            <p>100명</p>
+            <p class="font-s">People</p>
         </div>
         <div class="gallery-item">
             <div class="gallery-img">
-                <img src="./asset/pin.png" alt="img">
+                <img src="./asset/icon4.png" alt="img">
             </div>
+            <p class="font-m">대표이사</p>
+            <h3 class="font-l">이지형</h3>
             <hr style="border: 1px solid skyblue; width: 10%">
-            <h3>대표이사</h3>
-            <p>이지형</p>
+            <p class="font-s">Ceo</p>
         </div>
     </div>
 </section>
 
 <!-- goal Section -->
 <section class="sub-banner" id="goal" aria-labelledby="goal-heading">
-    <img src="https://heverdemo.files.wordpress.com/2019/08/autumn-mood-forest-cold-dawn-397096-1.jpg" alt="사업 목표" class="sub-banner-image">
+    <img src="./asset/banner-goal.jpg" class="sub-banner-image">
     <div id="sub-banner-text">
-        <h2 class="title-pont">글로벌 현대화</h2><br>
-        <p class="normal-pont">부동산과 IT를 접목한 새로운 Proptech 시장 개척과 부동산 업종의 글로벌 현대화로<br>
-            더이상 일본 국내에 국한되지않는 ADERS만의 새로운 비즈니스를 전 세계에 공개합니다. </p>
+        <h2 class="font-xl">글로벌 현대화</h2><br>
+        <p class="font-s" style="color: #ffffff">부동산과 IT를 접목한 새로운 Proptech 시장 개척과<br> 부동산 업종의 글로벌 현대화<br>
+            더이상 일본 국내에 국한되지 않는<br> ADERS만의 새로운 비즈니스를 전 세계에 공개합니다. </p>
     </div>
 </section>
 
@@ -111,43 +115,44 @@
 <div style="margin-bottom: 30px">
     <section class="content" id="info" aria-labelledby="info-heading">
         <div class="text-content">
-            <h3 class="color-title">Property</h3>
-            <h2>부동산 중개</h2>
-            <h3>일본 부동산 임대, 매매</h3>
-            <h4>창업 컨설팅 및 투자 컨설팅</h4>
+            <h3 class="color-title font-m">Property</h3>
+            <h2 class="font-l">부동산 중개</h2>
+            <p class="font-m">일본 부동산 임대, 매매</p>
+            <p class="font-m">창업 컨설팅 및 투자 컨설팅</p>
         </div>
         <div class="image-content">
-            <img src="https://aders-international.com/wp-content/uploads/2020/06/부동산임대_d.jpg" alt="부동산 중개">
+            <img src="./asset/content-1.jpg" alt="부동산 중개">
         </div>
     </section>
     <section class="content">
         <div class="image-content">
-            <img src="https://aders-international.com/wp-content/uploads/2020/06/부동산임대_d.jpg" alt="일본 비자">
+            <img src="./asset/content-2.jpg" alt="일본 비자">
         </div>
         <div class="text-content">
-            <p class="color-title">Administrative</p>
-            <h2>행정서사</h2>
-            <h3>일본 회사 설립, 비자 상담,<br> 상속 등 각종 행정 업무</h3>
+            <p class="color-title font-m">Administrative</p>
+            <h2 class="font-l">행정서사</h2>
+            <p class="font-m">일본 회사 설립, 비자 상담,</p>
+            <p class="font-m">상속 등 각종 행정 업무</p>
         </div>
     </section>
     <section class="content">
         <div class="text-content">
-            <p class="color-title">Programming</p>
-            <h2>프로그램 개발</h2>
-            <h3>디자인 부문 및 사이트 개발</h3>
-            <h3>부동산 관련 프로그램(Proptech)<br> 개발 업무</h3>
+            <p class="color-title font-m">Programming</p>
+            <h2 class="font-l">프로그램 개발</h2>
+            <p class="font-m">디자인 부문 및 사이트 개발</p>
+            <p class="font-m">부동산 관련 프로그램<br>(Proptech) 개발 업무</p>
         </div>
         <div class="image-content">
-            <img src="https://aders-international.com/wp-content/uploads/2020/06/부동산임대_d.jpg" alt="부동산 프로그래밍, 개발">
+            <img src="./asset/content-programing.jpg" alt="부동산 프로그래밍, 개발">
         </div>
     </section>
 </div>
 <section class="sub-banner" id="contact" aria-labelledby="contact-heading">
-    <img src="https://heverdemo.files.wordpress.com/2019/08/autumn-mood-forest-cold-dawn-397096-1.jpg" alt="문의하기" class="sub-banner-image">
+    <img src="./asset/banner-contact.jpg" alt="문의하기" class="sub-banner-image">
     <div id="contact-banner-text">
-        <h2 class="title-pont">성공적인 일본 생활의 시작,</h2><br>
-        <h2 class="title-pont">에이더스에 문의하세요.</h2><br>
-        <div id="contact-heading" class="title-pont" onclick="copyToClipboard()" style="cursor: pointer">문의하기</div>
+        <h2 class="font-xl">성공적인 일본 생활의 시작,</h2>
+        <h2 class="font-xl">에이더스에 문의하세요.</h2><br>
+        <div id="contact-heading" class="font-m" onclick="copyToClipboard()" style="cursor: pointer">문의하기</div>
     </div>
 </section>
 
@@ -155,17 +160,17 @@
 <footer class="footer" aria-label="푸터">
     <section class="info">
         <div class="info-div">
-            <div>주소</div>
-            <p style="padding: 10px">
+            <div><a class="font-xs">주소</a></div>
+            <p class="font-xs" style="padding: 10px">
                 〒540-0017<br> 大阪府大阪市中央区松屋町住吉６−８
             </p>
         </div>
         <div class="info-div">
-            <div>연락처</div>
-            <p style="padding: 10px">Email: property@aders-international.com <br>Phone: +81-6-6655-0328</p>
+            <div><a class="font-xs">연락처</a></div>
+            <p class="font-xs" style="padding: 10px">Email: property@aders-international.com <br>Phone: +81-6-6655-0328</p>
         </div>
     </section>
-    <p style="padding-bottom: 10px">© 2024 ADERS International. All rights reserved.</p>
+    <p class="font-xs" style="padding-bottom: 10px">© 2024 ADERS International. All rights reserved.</p>
 </footer>
 <script src="js/animation.js"></script>
 <script>
