@@ -30,8 +30,13 @@ body,html {
 ::-webkit-scrollbar-thumb:hover {
     background: #555; /* 마우스를 올렸을 때 색상 */
 }
-
-
+.heelo {
+    position: absolute;
+    top: -9999px; /* 화면 밖에 위치 */
+    left: -9999px;
+    width: 500px;
+    height: 500px;
+}
 
 /* 문의 섹션 */
 .contact {

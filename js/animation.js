@@ -1,4 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // "eager-loading"을 위해 미리 로드할 이미지 설정
+    const preloadImage = new Image();
+    preloadImage.src = "./asset/content-3.jpg"; // 미리 로드할 이미지 경로 설정
+
+    // 이미지 로딩이 완료되면 해당 요소에 src 적용
+    preloadImage.onload = () => {
+        const targetImage = document.querySelector("#egar-loading");
+        if (targetImage) {
+            targetImage.src = preloadImage.src;
+            console.log("이미지가 미리 로드되었습니다.");
+        }
+    };
+});
+document.addEventListener("DOMContentLoaded", () => {
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -7,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }, {
-        threshold: 0.2 // 요소의 20%가 화면에 들어올 때 애니메이션 시작
+        threshold: 0
     });
 
     const elements = document.querySelectorAll(".text-content, .image-content");
