@@ -1,0 +1,105 @@
+#bridge {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 120vh;
+    background-color: #15171a;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.img-container {
+    display: flex;
+    width: 30%;
+    height: 80%;
+    gap: 10px; /* 이미지 사이 간격 */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: #3d444e 1px solid ;
+}
+.img-item {
+    width: 50%;
+    transition: transform 0.4s ease, flex-grow 0.4s ease;
+    cursor: pointer;
+    border-radius: 10px
+}
+.img-item:hover {
+    margin: 0 5px 5px 0;
+    transition: transform 0.4s ease, flex-grow 0.4s ease;
+    box-shadow: #00aded 5px 5px;
+}
+.bridge-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 70%;
+}
+.bridge-view img {
+    width: 80%;
+    height: 50%;
+}
+.view-img {
+    width: 50%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+.view-text {
+    font-size: 1.5em;
+}
+.view-overlay {
+    position: relative;
+    width: 60%;
+}
+
+.view-overlay img {
+    width: 100%;
+    height: auto;
+}
+.hover-able{
+    filter: blur(30px);
+    transform: scale(1.2);
+}
+.hover-able__top {
+    height: 0;
+    margin-bottom: 8px;
+    overflow-y: hidden;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba(0, 25, 54, 0.31);
+    opacity: 0;
+    transition: opacity 0.3s, height 0.3s;
+}
+.hover-able__title {
+    margin: 0 0 20px;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 41px;
+    color: rgb(51, 61, 75);
+    transition: font-size 0.3s, line-height 0.3s;
+}
+.hover-able__body {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: rgb(51, 61, 75);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.effect-shine:hover {
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+}
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+
+    to {
+        -webkit-mask-position: -50%;
+    }
+}

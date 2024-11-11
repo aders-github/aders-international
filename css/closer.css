@@ -1,0 +1,32 @@
+#closer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: url('../asset/closer.png') no-repeat center center/cover;
+    z-index: -1;
+}
+/* 텍스트 위치와 스타일 */
+.closer-content {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-30%, -60%);
+    color: #000000;
+}
+.closer-content h2 {
+    color: #000000;
+    font-size: 40px;
+}
+
+.closer-content span {
+    font-weight: bold;
+    font-size: 30px;
+    font-stretch: normal;
+    line-height: 43.5px;
+    color: #606060;
+    letter-spacing: normal;
+    word-break: keep-all;
+    -webkit-font-smoothing: subpixel-antialiased;
+}

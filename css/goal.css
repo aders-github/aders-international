@@ -1,0 +1,54 @@
+#goal {
+    position: relative;
+    width: 100vw;
+    height: 200vh;
+    background-image: url('/asset/goal.jpg'); /* 배경 이미지 경로 */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#goal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #121417;
+    opacity: var(--overlay-opacity, 1); /* JavaScript로 제어 */
+    transition: opacity 0.1s ease; /* 스크롤에 따라 부드럽게 전환 */
+    z-index: 1;
+}
+
+.goal-content {
+    background-color: rgba(0, 0, 0, 0.53);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2; /* 텍스트를 배경 위에 표시 */
+    width: 40%;
+    height: auto;
+    padding: 5%;
+}
+
+.goal-content h2 {
+    color: #b0b8c1;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.goal-content span {
+    font-weight: bold;
+    font-size: 30px;
+    font-stretch: normal;
+    line-height: 43.5px;
+    color: #fff;
+    letter-spacing: normal;
+    word-break: keep-all;
+    -webkit-font-smoothing: subpixel-antialiased;
+}

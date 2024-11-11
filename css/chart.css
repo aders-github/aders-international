@@ -1,0 +1,89 @@
+#chart-section {
+    position: relative;
+    background-color: #15171a; /* 배경색 설정 */
+    color: #fff;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    white-space: nowrap; /* 줄바꿈 방지 */
+}
+
+.chart-content {
+    position: absolute;
+    top: 50%; /* 차트의 상단에 위치 */
+    left: 40%;
+    transform: translate(-40%,-50%);
+    z-index: 5;
+    color: #fff;
+    text-align: left;
+    width: auto;
+    margin: 0 auto;
+}
+
+.chart-content p {
+    font-size: 38px;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+
+.metrics {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 1줄에 2개씩 배치 */
+    gap: 20px;
+    max-width: 800px;
+}
+
+.metric p {
+    font-size: 21px;
+    margin: 0;
+    color: #878787; /* 서브 텍스트 색상 */
+}
+
+.metric h2 {
+    font-size: 64px;
+    font-weight: 700;
+    margin: 5px 0 0 0;
+}
+/* 차트 라인 스타일 *//*line=============*/
+.chart-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    stroke: #0123b3; /* 선 색상 */
+    stroke-width: 2;
+    fill: none;
+    opacity: 1;
+    overflow: visible;
+}
+.chart-fill {
+    position: relative;
+    height: 100%;
+    background-color: white;
+}
+.chart-line path {
+    stroke-dasharray: 1000; /* 경로 길이 설정 */
+    stroke-dashoffset: 1000;
+    animation: drawLine 10s ease forwards, glow 2s ease infinite alternate;
+}
+
+/* 라인 그리기 애니메이션 */
+@keyframes drawLine {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* 라인 빛나게 하는 애니메이션 */
+@keyframes glow {
+    from {
+        stroke: #0123b3;
+        stroke-width: 2;
+    }
+    to {
+        stroke: #495eb6;
+        stroke-width: 4;
+    }
+}
