@@ -76,7 +76,7 @@
 }
 .card-text-box{
     padding: 32px;
-    letter-spacing: -2px;
+    letter-spacing: normal;
 }
 .card-content.hover .card-text-box {
     padding: 20% 32px;
