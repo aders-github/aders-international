@@ -4,7 +4,7 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    background: url('../asset/closer.png') no-repeat center center/cover;
+    background-color: rgb(207, 212, 216);
     z-index: -1;
 }
 /* 텍스트 위치와 스타일 */
@@ -19,14 +19,31 @@
     color: #000000;
     font-size: 40px;
 }
-
+.contact-obj-pin {
+    position: absolute;
+    top: 25%;
+    left: 22%;
+    width: 8%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    animation: bounce 1.5s infinite;
+}
+.contact-obj-house  {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    z-index: -1;
+    transform: translate(-20%, -50%);
+    -webkit-background-size: cover;
+    background-size: cover;
+}
 .closer-content span {
     font-weight: bold;
     font-size: 30px;
     font-stretch: normal;
     line-height: 43.5px;
     color: #606060;
-    letter-spacing: normal;
+    letter-spacing: -3px;
     word-break: keep-all;
     -webkit-font-smoothing: subpixel-antialiased;
 }

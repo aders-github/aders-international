@@ -1,0 +1,43 @@
+footer {
+    width: 100vw;
+    height: 30vh;
+    background-color: #7389c4; /* 사진과 같은 배경색 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.company-info img {
+    width: 30%;
+}
+
+.company-info p {
+    margin: 5px 0;
+}
+
+.lease h3, .trade h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.lease p, .trade p, .company-info p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.lease h4 {
+    margin-top: 15px;
+    font-size: 16px;
+}

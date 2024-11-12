@@ -18,12 +18,17 @@
     text-align: left;
     width: auto;
     margin: 0 auto;
+    letter-spacing: -3px;
+
 }
 
 .chart-content p {
     font-size: 38px;
     margin: 0 0 20px 0;
     font-weight: 600;
+}
+.metric-head{
+    line-height: 60px;
 }
 
 .metrics {
@@ -33,7 +38,9 @@
     gap: 20px;
     max-width: 800px;
 }
-
+.metric {
+    padding-bottom: 20px;
+}
 .metric p {
     font-size: 21px;
     margin: 0;
