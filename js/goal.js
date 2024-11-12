@@ -13,10 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 let visibleRatio = entry.intersectionRatio / 0.7;
                 goalSection.style.setProperty('--overlay-opacity', 1 - visibleRatio);
 
-                // opacity가 0이 되면 옵저버 해제
-                if (visibleRatio >= 1) {
-                    observer.unobserve(goalContent);
-                }
+            } else {
+                goalSection.style.setProperty('--overlay-opacity', 1);
             }
         });
     }, observerOptions);

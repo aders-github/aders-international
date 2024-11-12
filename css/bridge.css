@@ -1,98 +1,122 @@
 #bridge {
+    padding: 10% 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    -webkit-box-pack: center;
     width: 100vw;
-    height: 120vh;
-    background-color: #15171a;
-    flex-direction: row;
+    height: 150vh;
+    background-color: #ffffff;
     justify-content: flex-start;
 }
-.img-container {
-    display: flex;
-    width: 30%;
-    height: 80%;
-    gap: 10px; /* 이미지 사이 간격 */
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-right: #3d444e 1px solid ;
+#bridge h2 {
+    margin:0 0 13px;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: bold;
+    font-stretch: normal;
+    line-height: 1.4em;
+    word-break: keep-all;
 }
-.img-item {
-    width: 50%;
-    transition: transform 0.4s ease, flex-grow 0.4s ease;
-    cursor: pointer;
-    border-radius: 10px
-}
-.img-item:hover {
-    margin: 0 5px 5px 0;
-    transition: transform 0.4s ease, flex-grow 0.4s ease;
-    box-shadow: #00aded 5px 5px;
-}
-.bridge-view {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#bridge span {
+    margin-bottom: 42px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1.45em;
+    color: #4e5968;
     text-align: center;
-    color: white;
-    width: 70%;
+    letter-spacing: normal;
+    word-break: keep-all;
 }
-.bridge-view img {
-    width: 80%;
-    height: 50%;
-}
-.view-img {
-    width: 50%;
-    max-width: 300px;
-    margin-bottom: 20px;
-}
-.view-text {
-    font-size: 1.5em;
-}
-.view-overlay {
-    position: relative;
+.bridge-cards{
+    display: grid;
+    flex-wrap: wrap;
+    gap: 30px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 50px;
     width: 60%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    grid-template-rows: 1fr 1fr;    /* 2 rows */
+}
+.card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.card-content {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: default;
+    border-radius: 17px;
 }
 
-.view-overlay img {
+.card-imgbox {
+    position: absolute;
     width: 100%;
-    height: auto;
+    height: 100%;
+    z-index: -1;
+     background-color: #cdcdcd;
+    -webkit-background-size: cover;
+    background-size: cover;
+    border-radius: 16px;
+    -webkit-transition: background-image 0.3s ease;
 }
-.hover-able{
-    filter: blur(30px);
+ .card-content.hover .card-imgbox {
+     transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+     opacity: 0.3;
+    filter: blur(5px);
     transform: scale(1.2);
 }
-.hover-able__top {
-    height: 0;
-    margin-bottom: 8px;
-    overflow-y: hidden;
-    font-size: 15px;
-    line-height: 24px;
-    color: rgba(0, 25, 54, 0.31);
-    opacity: 0;
-    transition: opacity 0.3s, height 0.3s;
+.card-text-box{
+    padding: 32px;
+    letter-spacing: -2px;
 }
-.hover-able__title {
-    margin: 0 0 20px;
+.card-content.hover .card-text-box {
+    padding: 20% 32px;
+}
+.card-top {
+    letter-spacing: normal;
+    height: 24px;
+    overflow-y: hidden;
+    font-size: 20px;
+    line-height: 24px;
+    color: #343b45;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease, height 0.3s ease;
+    transition: opacity 0.3s ease, height 0.3s ease;
+}
+.card-title {
+    margin: 0 0 20px 0;
     font-size: 32px;
     font-weight: bold;
     line-height: 41px;
-    color: rgb(51, 61, 75);
-    transition: font-size 0.3s, line-height 0.3s;
+    color: #333d4b;
+    -webkit-transition: font-size 0.3s ease, line-height 0.3s ease;
+    transition: font-size 0.3s ease, line-height 0.3s ease;
 }
-.hover-able__body {
-    margin: 0;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 21px;
-    color: rgb(51, 61, 75);
+.card-body {
     opacity: 0;
-    transition: opacity 0.3s;
+    font-size: 17px;
+}
+.card-content.hover .card-body {
+    opacity: 1;
+}
+.effect-shine {
+    height: 20%;
+    text-align: center;
 }
 .effect-shine:hover {
-    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0) 40%, #000 60%, rgba(0,0,0,.6) 70%);
     -webkit-mask-size: 200%;
     animation: shine 2s infinite;
+    cursor: default;
 }
 @-webkit-keyframes shine {
     from {
@@ -103,3 +127,4 @@
         -webkit-mask-position: -50%;
     }
 }
+
