@@ -50,8 +50,7 @@
 .card-content {
     z-index: 1;
     position: relative;
-    width: 100%;
-    height: 100%;
+
     overflow: hidden;
     cursor: default;
     border-radius: 17px;
@@ -64,7 +63,6 @@
     z-index: -1;
      background-color: #cdcdcd;
     -webkit-background-size: cover;
-    background-size: cover;
     border-radius: 16px;
     -webkit-transition: background-image 0.3s ease;
 }
@@ -127,4 +125,43 @@
         -webkit-mask-position: -50%;
     }
 }
+/* 모바일 화면 스타일 */
+@media (max-width: 500px) {
+    #bridge {
+        height: auto;
+    }
+    #bridge h2 {
+        font-size: 28px;
+        line-height: 1.3em;
+    }
+    #bridge span {
+        font-size: 16px;
+        line-height: 1.2em;
+    }
+    .bridge-cards{
+        grid-template-columns: 1fr; /* 2 columns */
 
+    }
+    .card-imgbox {
+
+    }
+    .card-text-box {
+        padding: 15px;
+    }
+
+    .card-top {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-body {
+        font-size: 13px;
+    }
+    .card-content.hover .card-imgbox {
+        transform: scale(1);
+    }
+}

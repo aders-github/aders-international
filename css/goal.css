@@ -52,3 +52,17 @@
     word-break: break-word;
     -webkit-font-smoothing: subpixel-antialiased;
 }
+@media (max-width: 500px) {
+    @media (max-width: 500px) {
+        .goal-content h1 {
+            font-size: 24px;
+            margin: 0 0 15px;
+        }
+
+        .goal-content span {
+            font-size: 16px;
+            line-height: 1.4em;
+            letter-spacing: normal;
+        }
+    }
+}

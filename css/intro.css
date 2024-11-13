@@ -5,17 +5,7 @@
     display: flex;
     justify-content: center;
     background: url('../asset/banner-intro.jpg') no-repeat center center/cover;
-    -webkit-animation: slidein 100s;
-    animation: slidein 100s;
 
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
 }
 /* 텍스트 위치와 스타일 */
 .intro-content {
@@ -66,13 +56,23 @@
         transform: translateY(10px);
     }
 }
-@-webkit-keyframes slidein {
-    from {background-position: top; background-size:150vw; }
-    to {background-position: -100px 0; background-size:120vw;}
-}
+@media (max-width: 500px) {
+    #intro {
+        height: 100vh;
+        background-size: cover;
+    }
 
-@keyframes slidein {
-    from {background-position: top;background-size:150vw; }
-    to {background-position: -100px 0;background-size:120vw;}
+    .intro-content {
+        top: 50%;
+    }
 
+    .intro-content span {
+        font-size: 36px;
+        letter-spacing: -3px;
+    }
+
+    .arrow {
+        font-size: 1.5em;
+        margin-top: 15%;
+    }
 }

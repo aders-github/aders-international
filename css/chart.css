@@ -94,3 +94,34 @@
         stroke-width: 4;
     }
 }
+/* 모바일 화면 스타일 */
+@media (max-width: 500px) {
+    .chart-content {
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        letter-spacing: -1px;
+    }
+    .metric-head {
+        width: 100%;
+    }
+    .chart-content h1 {
+        font-size: 24px;
+        margin: 0 0 10px 0;
+        line-height: normal;
+        white-space: wrap;
+    }
+
+    .metrics {
+        gap: 10px;
+    }
+
+    .metric p {
+        font-size: 13px;
+    }
+
+    .metric h2 {
+        font-size: 24px;
+    }
+}
