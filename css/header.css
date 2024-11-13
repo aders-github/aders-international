@@ -32,3 +32,56 @@
     color: #000000;
     text-decoration: none;
 }
+
+.hamburger {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 60%;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    flex-direction: column;
+    width: 150px;
+    z-index: 100;
+}
+.dropdown-menu a {
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+}
+.dropdown-menu a:hover {
+    background-color: #575757;
+}
+.dropdown-menu.show {
+    display: flex;
+}
+.line {
+    border: 1px solid;
+    width: 100%;
+    margin: 0;
+
+}
+@media (max-width: 500px) {
+    .nav-link {
+        display: none;
+    }
+    .logo {
+        margin: 0;
+        width: 30%;
+    }
+    .hamburger {
+        display: block;
+    }
+    .header-container {
+        gap: 90%;
+        width: 100%;
+        margin: 0;
+    }
+}

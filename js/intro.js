@@ -23,3 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(element);
     });
 });
+function toggleDropdown() {
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    dropdownMenu.classList.toggle('show');
+}

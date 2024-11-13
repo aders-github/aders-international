@@ -58,3 +58,8 @@ body,html {
     white-space: nowrap; /* 줄바꿈 방지 */
     overflow: hidden; /* 넘치는 텍스트가 화면 밖으로 나가도록 */
 }
+@media (max-width: 500px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
