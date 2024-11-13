@@ -31,7 +31,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 2; /* 텍스트를 배경 위에 표시 */
-    width: 40%;
+    width: 50%;
     height: auto;
     padding: 5%;
 }
@@ -49,6 +49,6 @@
     line-height: 50px;
     color: #fff;
     letter-spacing: -3px;
-    word-break: keep-all;
+    word-break: break-word;
     -webkit-font-smoothing: subpixel-antialiased;
 }
