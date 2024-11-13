@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://www.aders-international.com/(.*)",
+      "permanent": true
+    }
+  ]
+}
