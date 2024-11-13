@@ -27,3 +27,12 @@ function toggleDropdown() {
     const dropdownMenu = document.querySelector('.dropdown-menu');
     dropdownMenu.classList.toggle('show');
 }
+document.addEventListener('click', function(event) {
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    const hamburger = document.querySelector('.hamburger');
+
+    // 드롭다운 메뉴나 햄버거 아이콘이 아닌 영역을 클릭했을 때 메뉴 닫기
+    if (dropdownMenu.classList.contains('show') && !dropdownMenu.contains(event.target) && !hamburger.contains(event.target)) {
+        dropdownMenu.classList.remove('show');
+    }
+});
