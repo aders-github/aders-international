@@ -20,18 +20,18 @@
     width: 100vw; /* 각 슬라이드의 너비를 화면 전체 너비로 설정 */
     height: 100vh;
     text-align: center;
-    color: #fff;
+    color: #ece8e8;
 }
 
 .intro-content span {
-    line-height: 1.2em;
+    line-height: 1.5em;
     font-size: 60px;
     margin: 0;
     letter-spacing: -6px;
 }
 
 .intro-content b {
-    color: skyblue;
+    color: skyblue ;
 }
 
 .button-left, .button-right {

@@ -55,7 +55,7 @@ const getInterval = () => {
             currentIndex = 0; // 자동 슬라이드가 끝에 도달하면 처음으로 돌아가도록 설정
         }
         moveSlide(currentIndex);
-    }, 5000); // 3초마다 자동 슬라이드
+    }, 9000); // 3초마다 자동 슬라이드
 };
 
 let interval = getInterval();
