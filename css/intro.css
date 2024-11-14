@@ -29,6 +29,11 @@
     margin: 0;
     letter-spacing: -6px;
 }
+.jp-content span {
+    line-height: 1.5em;
+    font-size: 60px;
+    margin: 0;
+}
 
 .intro-content b {
     color: skyblue ;
