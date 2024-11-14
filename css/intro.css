@@ -36,22 +36,23 @@
 
 .button-left, .button-right {
     position: absolute;
-    top: 50%;
     transform: translateY(-50%);
-    font-size: 2.5rem;
+    font-size: 3rem;
     background-color: rgba(0, 0, 0, 0);
-    color: #fff;
+    color: rgba(255, 255, 255, 0.73);
     border: none;
     padding: 10px;
     cursor: pointer;
 }
 
 .button-left {
-    left: 20px;
+    top: 65%;
+    left: 2%;
 }
 
 .button-right {
-    right: 20px;
+    top: 65%;
+    right: 2%;
 }
 /* 아래 화살표 스타일 */
 .arrow {
